@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalhes do Time - <%= time.nome %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">Catálogo de Times</a>
+        <nav aria-label="Navegação principal">
+            <a href="/times" aria-current="page">Times</a>
+        </nav>
+    </header>
+    <main class="container">
+        <a class="back-link" href="/times">Voltar para os times</a>
+        <article class="detail-card">
+            <p class="eyebrow">Detalhes do time</p>
+            <h1><%= time.nome %></h1>
+            <dl class="details-list">
+                <div><dt>Estádio</dt><dd><%= time.estadio %></dd></div>
+                <div><dt>Cidade</dt><dd><%= time.cidade %></dd></div>
+            </dl>
+        </article>
+    </main>
+</body>
+</html>
